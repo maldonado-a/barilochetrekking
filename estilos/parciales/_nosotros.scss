@@ -1,0 +1,63 @@
+.slider li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    font-family: allisons;
+    color: blueviolet;
+    width: 100%;
+    -webkit-animation: cambio 2s alternate;
+    animation: cambio 2s alternate;
+  
+    h1 {
+      color: red;
+      font-family: Arial;
+      padding: 20xp;
+    }
+  }
+  
+  @-webkit-keyframes cambio {
+    0% {
+      margin-left: 0%;
+    }
+  
+    10% {
+      margin-left: 10%;
+    }
+  
+    20% {
+      margin-left: -100%;
+    }
+  
+    30% {
+      margin-left: -100%;
+    }
+  
+    45% {
+      margin-left: -200%;
+    }
+  }
+  
+  @keyframes cambio {
+    0% {
+      margin-left: 0%;
+    }
+  
+    10% {
+      margin-left: 10%;
+    }
+  
+    20% {
+      margin-left: -100%;
+    }
+  
+    30% {
+      margin-left: -100%;
+    }
+  
+    45% {
+      margin-left: -200%;
+    }
+  }

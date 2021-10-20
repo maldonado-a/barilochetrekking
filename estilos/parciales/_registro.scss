@@ -1,0 +1,94 @@
+
+
+.titulo__h2 {
+    font-size: 30px;
+    text-align: center;
+    color: red;
+    margin-top: 60px;
+    font-family: arial;
+    
+  }
+  
+  .formulario {
+    display: flex;
+    background-color:black;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    flex-direction: row;
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+  
+  .form-register {
+    width: 400px;
+    background-image: linear-gradient(to bottom, #263646, #335370);
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    font-family: arial;
+    color: white;
+    box-shadow: 7px 13px 37px #000;
+    grid-column: 1/2;
+  }
+  .controls {
+    width: 100%;
+    background: #24303c;
+  
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid red;
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px;
+    color: white;
+  }
+  .botons {
+    width: 100%;
+    background:red;
+    border: none;
+    padding: 12px;
+    color:wheat;
+    margin: 16px 0;
+    font-size: 16px;
+    border-radius: 5.5px;
+   
+  }
+  
+  /*---------responsive login ------------*/
+  
+  @media screen and (max-width: 845px) and (min-width: 426px) {
+    .formulario {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+  
+  @media screen and (max-width: 425px) and (min-width: 320px) {
+    .formulario {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  
+    .form-register {
+      width: 300px;
+    }
+  
+    h2 {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+  
+    
+  
+    p {
+      text-align: center;
+      font-size: 14px;
+      line-height: 30px;
+    }
+  
+    a {
+      color: white;
+      text-decoration: none;
+    }
+  }

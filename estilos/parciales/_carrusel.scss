@@ -1,0 +1,76 @@
+ .banner {
+    .logo__carrusel {
+      color: dodgerblue;
+      position: absolute;
+      top: 20%;
+      left: 45%;
+      transform: translate(-40%, -30%);
+      font-family: "Meie Script", cursive;
+      font-size: 7rem;
+    }
+  
+    a {
+      font-size: 2rem;
+      display: inline-block;
+      padding: 60px 60px;
+      background: #1c3e5f;
+      border-radius: 5px;
+      color: white;
+      text-decoration: none;
+      position: absolute;
+      top: 80%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+  
+      &:hover {
+        background: #0a2036;
+      }
+  
+      font-size: 20px;
+      padding: 5px 5px;
+      top: 65%;
+      left: 50%;
+    }
+  }
+  
+  
+  @media screen and (max-width: 768px) and (min-width: 416px) {
+    .banner {
+      .logo__carrusel {
+        position: absolute;
+        font-size: 4rem;
+      }
+  
+      a {
+        font-size: 2rem;
+        padding: 10xp 10xp;
+        display: inline-block;
+        position: absolute;
+        padding: 40px 40px;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        background-color: dodgerblue;
+      }
+    }
+  }
+  
+  @media screen and (min-width: 425px) {
+    .banner a {
+
+      font-size: 1rem;
+        display: inline-block;
+        position: absolute;
+        padding: 20px 20px;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        background-color: dodgerblue;
+        
+     
+    }
+  }
+
+  

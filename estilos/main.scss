@@ -1,0 +1,82 @@
+@import"./parciales/generales";
+@import"./parciales/footer";
+@import"./parciales/excursione";
+@import"./parciales/header";
+@import"./parciales/contacto";
+@import"./parciales/carrusel";
+@import"./parciales/registro";
+@import"./parciales/nosotros";
+@import"./parciales/galeriaIndex";
+
+@import url("https://kit.fontawesome.com/04f7d0d100.js");
+
+@import url('https://fonts.googleapis.com/css2?family=Allison&display=swap');
+
+
+
+
+ 
+.center_body h1 {
+    font-size: 200px;
+    color: #ffff;
+    letter-spacing: 5px;
+    font-weight: 700;
+    text-shadow: 9px 6px 3px #222222;
+    -webkit-transition: all 2 linear;
+    transition: all 2 linear;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .center_body h2 {
+    color: #ffff;
+    font-style: 1.5rem;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    font-size: 200xp;
+  }
+  
+  .center_body p {
+    color: black;
+    font-weight: 20;
+    margin: 20px;
+  }
+  
+  
+  
+  
+  .center_body a {
+  
+    
+    text-decoration: none;
+    color:white;
+    background-color: black;
+    padding: 10px 10px;
+    -webkit-box-shadow: 5px 4px 15px -5px #0046d5;
+            box-shadow: 5px 4px 15px -5px #0046d5;
+    border-radius: 40px;
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+    height: 6rem;
+    width: 40rem;
+   }
+  
+  .center_body a:hover {
+    color: #ffff;
+    background-color: #31559c;
+  }
+
+  .main_body{
+    width: 110%;
+    height: 110vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../Imagenes/montaña.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    
+    justify-content: center;
+}
+
+

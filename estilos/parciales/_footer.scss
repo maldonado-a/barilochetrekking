@@ -1,0 +1,62 @@
+.redes {
+    background:grey;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    padding: 20px 0;
+  
+  .redes__titulo {
+    font-size: 60px;
+    font-weight: 700xp;
+    color: black;
+    position: relative;
+    font-family: allison;
+    padding: 0;
+    margin: 0 0 15px 0;
+  }
+  
+  
+  .redes__enlace {
+    margin: 0 0 40px 0; 
+    color: blanchedalmond;
+    font-size: 18px;
+    display: inline-block;
+    background-color:#0a2036;
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 50%;
+    text-align: center;
+    width: 50px;
+    height: 36px;
+    transition: 0.3s;
+  }
+  .redes__enlace :hover {
+    background:cornflowerblue;
+    color: #fff;
+    text-decoration: none;} 
+}
+
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 50px 50px;
+  background:#0a2036;
+  position: relative;
+  margin: 60xp;
+  text-decoration: none;
+  color: cornsilk;
+  .links a {
+    text-decoration: none;
+    list-style: none;
+    font-size: 30px;
+    padding: 0xp;
+  }
+}
+
+
