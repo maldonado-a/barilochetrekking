@@ -94,12 +94,10 @@ h2 {
 }
 
 .redes .redes__enlace :hover {
-  background: cornflowerblue;
-  color: #fff;
-  text-decoration: none;
+  padding: 20xp;
 }
 
-.footer {
+.redes .footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -114,11 +112,21 @@ h2 {
   color: cornsilk;
 }
 
-.footer .links a {
+.redes .footer .links a {
   text-decoration: none;
   list-style: none;
   font-size: 30px;
   padding: 0xp;
+}
+
+.redes .footer_title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: black;
 }
 
 .persona {
@@ -352,8 +360,6 @@ h2 {
     display: inline-block;
     position: absolute;
     padding: 5px 5px;
-    top: 75%;
-    left: 50%;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
     color: white;
