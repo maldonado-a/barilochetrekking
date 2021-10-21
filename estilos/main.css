@@ -314,15 +314,15 @@ h2 {
 @media screen and (max-width: 768px) and (min-width: 416px) {
   .banner .logo__carrusel {
     position: absolute;
-    font-size: 4rem;
+    font-size: 8rem;
   }
   .banner a {
-    font-size: 2rem;
+    font-size: 1rem;
     padding: 10xp 10xp;
     display: inline-block;
     position: absolute;
     padding: 40px 40px;
-    top: 70%;
+    top: 60%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
@@ -338,6 +338,21 @@ h2 {
     position: absolute;
     padding: 20px 20px;
     top: 70%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    color: white;
+    background-color: dodgerblue;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .banner a {
+    font-size: 1rem;
+    display: inline-block;
+    position: absolute;
+    padding: 5px 5px;
+    top: 75%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
