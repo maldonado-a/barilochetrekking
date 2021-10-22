@@ -94,7 +94,8 @@ h2 {
 }
 
 .redes .redes__enlace :hover {
-  padding: 20xp;
+  padding: 60xp;
+  background-color: black;
 }
 
 .redes .footer {
