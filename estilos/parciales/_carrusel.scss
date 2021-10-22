@@ -1,4 +1,6 @@
- .banner {
+@import"./media";
+
+.banner {
     .logo__carrusel {
       color: dodgerblue;
       position: absolute;
@@ -9,7 +11,7 @@
       font-size: 7rem;
     }
   
-    a {
+     a {
       font-size: 2rem;
       display: inline-block;
       padding: 60px 60px;
@@ -34,27 +36,24 @@
   }
   
   
-  @media screen and (max-width: 768px) and (min-width: 416px) {
+  @media screen and (max-width: 768px)  {
     .banner {
       .logo__carrusel {
         position: absolute;
         font-size: 8rem;
       }
   
-      a {
-        font-size: 1rem;
-        padding: 10xp 10xp;
+      a { @include boton () ;
+       font-size: 3rem;
         display: inline-block;
         position: absolute;
-        padding: 40px 40px;
-        top: 60%;
-        left: 50%;
+        
         transform: translate(-50%, -50%);
-        color: white;
-        background-color: dodgerblue;
+        
+        
       }
     }
-  }
+  
   
   @media screen and (min-width: 425px) {
     .banner a {
@@ -67,7 +66,7 @@
         left: 50%;
         transform: translate(-50%, -50%);
         color: white;
-        background-color: dodgerblue;
+        
         
      
     }
@@ -82,11 +81,9 @@
         
         transform: translate(-50%, -50%);
         color: white;
-        background-color: dodgerblue;
+        
         top: 75%;
         left: 50%;
      
     }
-  }
-
-  
+    }}
