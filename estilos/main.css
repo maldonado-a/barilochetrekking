@@ -59,7 +59,7 @@ h2 {
 }
 
 .redes {
-  background: grey;
+  background: #99BAA5;
   color: #fff;
   font-size: 20px;
   text-align: center;
@@ -354,7 +354,7 @@ h2 {
   }
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 375px) {
   .banner a {
     font-size: 1rem;
     display: inline-block;
@@ -364,6 +364,8 @@ h2 {
             transform: translate(-50%, -50%);
     color: white;
     background-color: dodgerblue;
+    top: 75%;
+    left: 50%;
   }
 }
 
