@@ -4,14 +4,13 @@
     font-size: 30px;
     text-align: center;
     color: red;
-    margin-top: 60px;
+    margin-top: 40px;
     font-family: arial;
     
   }
   
   .formulario {
     display: flex;
-    background-color:black;
     align-items: flex-start;
     justify-content: space-evenly;
     flex-direction: row;
@@ -21,34 +20,34 @@
   
   .form-register {
     width: 400px;
-    background-image: linear-gradient(to bottom, #263646, #335370);
+    background-image: linear-gradient(to bottom, #CCA77A , white);
     padding: 30px;
     margin: auto;
     margin-top: 100px;
     border-radius: 4px;
     font-family: arial;
-    color: white;
-    box-shadow: 7px 13px 37px #000;
+    color:black;
+    box-shadow: 7px 13px 37px rgb(187, 180, 180);
     grid-column: 1/2;
   }
   .controls {
     width: 100%;
-    background: #24303c;
+    background: white;
   
     padding: 10px;
     border-radius: 4px;
     margin-bottom: 16px;
-    border: 1px solid red;
+    border: 1px solid #CCA77A;
     font-family: 'Rubik', sans-serif;
     font-size: 18px;
     color: white;
   }
   .botons {
     width: 100%;
-    background:red;
+    background:#CCA77A ;
     border: none;
     padding: 12px;
-    color:wheat;
+    color:black;
     margin: 16px 0;
     font-size: 16px;
     border-radius: 5.5px;
@@ -92,3 +91,6 @@
       text-decoration: none;
     }
   }
+
+  
+

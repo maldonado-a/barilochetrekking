@@ -3,7 +3,7 @@
     color: #fff;
     font-size: 20px;
     text-align: center;
-    padding: 20px 0;
+    
   
   .redes__titulo {
     font-size: 60px;
@@ -21,7 +21,7 @@
     color: blanchedalmond; 
     font-size: 18px;
     display: inline-block;
-    background-color:#7A805C;
+  background: #7A805C;
     line-height: 1;
     padding: 8px 0;
     margin-right: 4px;
@@ -32,8 +32,10 @@
     transition: 0.3s;
   }
   .redes__enlace :hover {
-    padding: 60xp;
-    background-color: black;}
+    color: #DDDDDA;
+  transform: scale(1.1, 1.1);
+  text-decoration:double;
+}
 
 
 .footer {
@@ -58,10 +60,8 @@
 }
 .footer_title
 {
-  display: flex;
-  justify-content: center;
+ 
   color:white;
 }}
-
 
 

@@ -1,8 +1,7 @@
-@charset "UTF-8";
 @import url("https://kit.fontawesome.com/04f7d0d100.js");
 @import url("https://fonts.googleapis.com/css2?family=Allison&display=swap");
 h1 {
-  color: black;
+  color: b;
   text-align: center;
   opacity: 0.7;
   font-family: arial;
@@ -20,10 +19,6 @@ body {
 ul {
   list-style: none;
   padding: 0;
-}
-
-p {
-  color: black;
 }
 
 .imagenPortada {
@@ -67,7 +62,6 @@ h2 {
   color: #fff;
   font-size: 20px;
   text-align: center;
-  padding: 20px 0;
 }
 
 .redes .redes__titulo {
@@ -85,7 +79,7 @@ h2 {
   color: blanchedalmond;
   font-size: 18px;
   display: inline-block;
-  background-color: #7A805C;
+  background: #7A805C;
   line-height: 1;
   padding: 8px 0;
   margin-right: 4px;
@@ -98,8 +92,11 @@ h2 {
 }
 
 .redes .redes__enlace :hover {
-  padding: 60xp;
-  background-color: black;
+  color: #DDDDDA;
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+  -webkit-text-decoration: double;
+          text-decoration: double;
 }
 
 .redes .footer {
@@ -125,20 +122,16 @@ h2 {
 }
 
 .redes .footer_title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   color: white;
 }
 
-.persona {
-  background: #616161;
-  background: -webkit-gradient(linear, left top, left bottom, from(#616161), to(#9bc5c3));
-  background: linear-gradient(to bottom, #616161, #9bc5c3);
-  border-radius: 10px;
+.titulo__h1 {
+  font-size: 70px;
+  text-align: center;
+  color: black;
+  margin-top: 50px;
+  font-family: serif;
+  margin-left: 30xp;
 }
 
 .persona__parrafo {
@@ -147,12 +140,15 @@ h2 {
           align-items: center;
   color: black;
   font-weight: bolder;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .persona__titulo {
-  font-family: Arial;
+  text-align: center;
   color: black;
+  margin-top: 50px;
+  font-family: serif;
+  margin-left: 20xp;
 }
 
 .persona__columna {
@@ -171,6 +167,7 @@ h2 {
 }
 
 .persona__contenedor {
+  border-radius: 10xp;
   display: -ms-grid;
   display: grid;
 }
@@ -189,13 +186,18 @@ h2 {
   }
 }
 
+.persona .reserva_excursion {
+  padding: 10xp;
+}
+
 .navbar-nav :hover {
   border: 1px solid black;
 }
 
 .navbar {
   background-color: #CCA77A;
-  padding: 20xp;
+  padding: 40xp;
+  font-size: large;
 }
 
 .logoDeContacto {
@@ -295,22 +297,110 @@ h2 {
   }
 }
 
-.banner .logo__carrusel {
-  color: dodgerblue;
+.indexMain__carrusel {
+  width: 100%;
+  height: 50vh;
+}
+
+.indexMain__carrusel .indexMain__carruselContainer {
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-inner {
+  height: 100%;
+}
+
+.carousel-item {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-filter: brightness(70%);
+          filter: brightness(70%);
+}
+
+.carousel-item__h3, .carousel-item__h4, .carousel-item__a {
   position: absolute;
-  top: 20%;
-  left: 45%;
-  -webkit-transform: translate(-40%, -30%);
-          transform: translate(-40%, -30%);
-  font-family: "Meie Script", cursive;
-  font-size: 7rem;
+  color: #DDDDDA;
+  font-size: 3rem;
+  top: 3rem;
+  left: 10rem;
+}
+
+@media only screen and (max-width: 991px) {
+  .carousel-item__h3, .carousel-item__h4, .carousel-item__a {
+    font-size: 2.5rem;
+    left: 8rem;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .carousel-item__h3, .carousel-item__h4, .carousel-item__a {
+    font-size: 2rem;
+    left: 6rem;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .carousel-item__h3, .carousel-item__h4, .carousel-item__a {
+    font-size: 1.8rem;
+    left: 2.5rem;
+  }
+}
+
+.carousel-item__h4 {
+  font-size: 1.3rem;
+  top: 8rem;
+}
+
+@media only screen and (max-width: 575px) {
+  .carousel-item__h4 {
+    font-size: 0.8rem;
+  }
+}
+
+.carousel-item__a {
+  top: 11rem;
+  -webkit-text-decoration: 1px solid transparent;
+          text-decoration: 1px solid transparent;
+  font-size: 3rem;
+  font-weight: 700;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.carousel-item:hover > .carousel-item__a {
+  color: #DDDDDA;
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+  text-decoration: underline;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+  width: 11%;
+}
+
+.excursion {
+  position: relative;
+  overflow: hidden;
+  -webkit-box-shadow: 4px 4px 3px 2px rgba(0, 0, 0, 0.4);
+  box-shadow: 4px 4px 3px 2px rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
 }
 
 .banner a {
   font-size: 2rem;
   display: inline-block;
   padding: 60px 60px;
-  background: #1c3e5f;
+  background: #CCA77A;
   border-radius: 5px;
   color: white;
   text-decoration: none;
@@ -326,19 +416,19 @@ h2 {
 }
 
 .banner a:hover {
-  background: #0a2036;
+  background: #666664;
 }
 
 @media screen and (max-width: 768px) {
   .banner .logo__carrusel {
     position: absolute;
-    font-size: 8rem;
+    font-size: 1rem;
   }
   .banner a {
-    background-color: green;
-    padding: 40px 40px;
-    top: 60%;
-    left: 50%;
+    background-color: #DDDDDA;
+    padding: 1px 1px;
+    top: 90%;
+    left: 60%;
     font-size: 3rem;
     display: inline-block;
     position: absolute;
@@ -361,16 +451,16 @@ h2 {
   }
 }
 
-@media screen and (max-width: 768px) and (min-width: 375px) {
+@media screen and (max-width: 768px) and (min-width: 320px) {
   .banner a {
     font-size: 1rem;
     display: inline-block;
     position: absolute;
-    padding: 5px 5px;
+    padding: 3px 3px;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
     color: white;
-    top: 75%;
+    top: 40%;
     left: 50%;
   }
 }
@@ -379,7 +469,7 @@ h2 {
   font-size: 30px;
   text-align: center;
   color: red;
-  margin-top: 60px;
+  margin-top: 40px;
   font-family: arial;
 }
 
@@ -387,7 +477,6 @@ h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: black;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
@@ -404,16 +493,16 @@ h2 {
 
 .form-register {
   width: 400px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#263646), to(#335370));
-  background-image: linear-gradient(to bottom, #263646, #335370);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#CCA77A), to(white));
+  background-image: linear-gradient(to bottom, #CCA77A, white);
   padding: 30px;
   margin: auto;
   margin-top: 100px;
   border-radius: 4px;
   font-family: arial;
-  color: white;
-  -webkit-box-shadow: 7px 13px 37px #000;
-          box-shadow: 7px 13px 37px #000;
+  color: black;
+  -webkit-box-shadow: 7px 13px 37px #bbb4b4;
+          box-shadow: 7px 13px 37px #bbb4b4;
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   grid-column: 1/2;
@@ -421,11 +510,11 @@ h2 {
 
 .controls {
   width: 100%;
-  background: #24303c;
+  background: white;
   padding: 10px;
   border-radius: 4px;
   margin-bottom: 16px;
-  border: 1px solid red;
+  border: 1px solid #CCA77A;
   font-family: 'Rubik', sans-serif;
   font-size: 18px;
   color: white;
@@ -433,10 +522,10 @@ h2 {
 
 .botons {
   width: 100%;
-  background: red;
+  background: #CCA77A;
   border: none;
   padding: 12px;
-  color: wheat;
+  color: black;
   margin: 16px 0;
   font-size: 16px;
   border-radius: 5.5px;
@@ -535,44 +624,41 @@ h2 {
   }
 }
 
-.card-argentina {
-  border: 1px;
-  -webkit-box-shadow: 2px 4px 30px 0 #5a5650;
-  box-shadow: 2px 4px 30px 0 rgba(136, 129, 124, 0.973);
-}
-
-#galeria .col-lg-4 {
-  padding: 25px;
+.info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  background-color: rgba(91, 94, 54, 0.233);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  border: 1xp;
-}
-
-.color_reservas {
-  background-color: #CCA77A;
-}
-
-.center_body h1 {
-  font-size: 200px;
-  color: #ffff;
-  letter-spacing: 5px;
-  font-weight: 700;
-  text-shadow: 9px 6px 3px #222222;
-  -webkit-transition: all 2 linear;
-  transition: all 2 linear;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  padding: 50px;
+  opacity: 0.2;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.excursion:hover .info {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.team-wrapper {
+  padding: 60px 0;
+}
+
+.section-title {
+  padding: 20px 0;
 }
 
 .center_body h2 {
@@ -583,8 +669,8 @@ h2 {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   font-size: 200xp;
 }
 
@@ -616,15 +702,15 @@ h2 {
 .main_body {
   width: 110%;
   height: 110vh;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(../Imagenes/montaña.jpg);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../Imagenes/montaña.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(/Imagenes/fondo1.jpeg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/Imagenes/fondo1.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 /*# sourceMappingURL=main.css.map */
