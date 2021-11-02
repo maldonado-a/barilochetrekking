@@ -465,107 +465,37 @@ h2 {
   }
 }
 
-.titulo__h2 {
-  font-size: 30px;
-  text-align: center;
-  color: red;
-  margin-top: 40px;
-  font-family: arial;
+.login-form {
+  padding: 200px 0;
+  background: url(/Imagenes/atardecer.jpg);
+  background-size: cover;
 }
 
-.formulario {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  margin-top: 20px;
-  margin-bottom: 50px;
-}
-
-.form-register {
-  width: 400px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#CCA77A), to(white));
-  background-image: linear-gradient(to bottom, #CCA77A, white);
-  padding: 30px;
+.login-form form {
+  max-width: 500px;
   margin: auto;
-  margin-top: 100px;
-  border-radius: 4px;
-  font-family: arial;
-  color: black;
-  -webkit-box-shadow: 7px 13px 37px #bbb4b4;
-          box-shadow: 7px 13px 37px #bbb4b4;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 1;
-  grid-column: 1/2;
+  padding: 40px 60px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  -webkit-box-shadow: 0px 2px 10px #838282;
+          box-shadow: 0px 2px 10px #838282;
 }
 
-.controls {
-  width: 100%;
-  background: white;
-  padding: 10px;
-  border-radius: 4px;
-  margin-bottom: 16px;
-  border: 1px solid #CCA77A;
-  font-family: 'Rubik', sans-serif;
-  font-size: 18px;
-  color: white;
+.login-form .form-name {
+  text-align: center;
+  margin-bottom: 25px;
+  line-height: 100px;
 }
 
-.botons {
-  width: 100%;
-  background: #CCA77A;
-  border: none;
-  padding: 12px;
-  color: black;
-  margin: 16px 0;
-  font-size: 16px;
-  border-radius: 5.5px;
+.login-form .item {
+  border-radius: 10px;
+  margin-bottom: 25px;
+  padding: 10px 20px;
 }
 
-/*---------responsive login ------------*/
-@media screen and (max-width: 845px) and (min-width: 426px) {
-  .formulario {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-}
-
-@media screen and (max-width: 425px) and (min-width: 320px) {
-  .formulario {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .form-register {
-    width: 300px;
-  }
-  h2 {
-    font-size: 18px;
-    margin-bottom: 20px;
-  }
-  p {
-    text-align: center;
-    font-size: 14px;
-    line-height: 30px;
-  }
-  a {
-    color: white;
-    text-decoration: none;
-  }
+.login-txt a {
+  text-decoration: none !important;
+  color: black !important;
 }
 
 .slider li {

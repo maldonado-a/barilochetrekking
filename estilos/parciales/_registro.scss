@@ -1,96 +1,33 @@
 
 
-.titulo__h2 {
-    font-size: 30px;
-    text-align: center;
-    color: red;
-    margin-top: 40px;
-    font-family: arial;
-    
-  }
-  
-  .formulario {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-evenly;
-    flex-direction: row;
-    margin-top: 20px;
-    margin-bottom: 50px;
-  }
-  
-  .form-register {
-    width: 400px;
-    background-image: linear-gradient(to bottom, #CCA77A , white);
-    padding: 30px;
+.login-form {
+  padding: 200px 0;
+  background: url(/Imagenes/atardecer.jpg);
+  background-size:cover;
+
+  form {
+    max-width: 500px;
     margin: auto;
-    margin-top: 100px;
-    border-radius: 4px;
-    font-family: arial;
-    color:black;
-    box-shadow: 7px 13px 37px rgb(187, 180, 180);
-    grid-column: 1/2;
-  }
-  .controls {
-    width: 100%;
-    background: white;
-  
-    padding: 10px;
-    border-radius: 4px;
-    margin-bottom: 16px;
-    border: 1px solid #CCA77A;
-    font-family: 'Rubik', sans-serif;
-    font-size: 18px;
-    color: white;
-  }
-  .botons {
-    width: 100%;
-    background:#CCA77A ;
-    border: none;
-    padding: 12px;
-    color:black;
-    margin: 16px 0;
-    font-size: 16px;
-    border-radius: 5.5px;
-   
-  }
-  
-  /*---------responsive login ------------*/
-  
-  @media screen and (max-width: 845px) and (min-width: 426px) {
-    .formulario {
-      display: flex;
-      flex-wrap: wrap;
-    }
-  }
-  
-  @media screen and (max-width: 425px) and (min-width: 320px) {
-    .formulario {
-      display: flex;
-      flex-wrap: wrap;
-    }
-  
-    .form-register {
-      width: 300px;
-    }
-  
-    h2 {
-      font-size: 18px;
-      margin-bottom: 20px;
-    }
-  
-    
-  
-    p {
-      text-align: center;
-      font-size: 14px;
-      line-height: 30px;
-    }
-  
-    a {
-      color: white;
-      text-decoration: none;
-    }
+    padding: 40px 60px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: 0px 2px 10px rgb(131, 130, 130);
   }
 
-  
+  .form-name {
+    text-align: center;
+    margin-bottom: 25px;
+    line-height: 100px;
+  }
 
+  .item {
+    border-radius: 10px;
+    margin-bottom: 25px;
+    padding: 10px 20px;
+  }
+
+}
+.login-txt a{
+  text-decoration: none !important;
+  color: black !important;
+}
