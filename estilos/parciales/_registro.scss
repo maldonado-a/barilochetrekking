@@ -2,7 +2,7 @@
 
 .login-form {
   padding: 200px 0;
-  background: url(../Imagenes/atardecer.jpg);
+  background: url(../Imagenes/inicio.jpg);
   background-size:cover;
 
   form {
@@ -31,3 +31,16 @@
   text-decoration: none !important;
   color: black !important;
 }
+
+
+    
+      
+    
+  @media screen and (max-width: 680px)  { 
+    .login-form form {
+      max-width: 300px;
+      
+
+    }
+    
+  }
