@@ -100,10 +100,11 @@
         </div>
     </div>
       
-     <div class="container d-flex justify-content-evenly">
-      <div class="row ">
+     <div class="container d-flex justify-content-evenly  ">
+      <div class="row row_center"
+      >
           <h3 class="text-center p-4 text-black text-uppercase fw-bold text-dark  ">Dificultad media</h3>
-          <div class=" col-lg-4 col-sm-4 col-xs-4  ">
+          <div class=" col-3 col-lg-4 col-sm-4 col-xs-4  ">
               <div class="card-argentina" style="width: 5rem;">
                   <div class="img-effect">
                       <img src="../Imagenes/Iconos/desnivel.png" class="card-img-top" alt="nyc">
@@ -118,7 +119,7 @@
                 </div>
           </div>
           
-          <div class="col-lg-4 col-sm-4 col-xs-4   ">
+          <div class=" col-3 col-lg-4 col-sm-4 col-xs-4   ">
               <div class="card-argentina" style="width: 5rem;">
                   <div class="img-effect">
                       <img src="../Imagenes/Iconos/distancia.png" class="card-img-top" alt="distancia">
@@ -129,7 +130,7 @@
                   </div>
                 </div>
           </div>
-          <div class="col-lg-4 col-sm-4 col-xs-4 ">
+          <div class=" col-3 col-lg-4 col-sm-4 col-xs-4 ">
               <div class="card-argentina" style="width: 5rem;">
                   <div class="img-effect">
                       <img src="../Imagenes/Iconos/tiempo.png" class="card-img-top" alt="italia">
@@ -598,7 +599,8 @@
   
  <footer>
   
-  <div class="redes">
+  
+  <div class="redes ">
     <h3 class="redes__titulo">¡Seguinos!</h3>
    
     <div class="redes__links">
@@ -607,11 +609,13 @@
       <a href="https://www.instagram.com" class="redes__enlace"><i class="fab fa-instagram"></i></a>
       <a href="https://www.youtube.com/?hl=es" class="redes__enlace"><i class="fab fa-youtube"></i></a>
   </div>
-  <div class="footer">
-    <div class="container-fluid">
+
+  <div class="caja-footer">
+    
+    <div class="container-fluid caja-abajo">
   
-      <div class="row text-center ">
-        <div class="col-xl-4 col-md-6 col-lg-4   ">
+      <div class="row text-center d-flex justify-content-between justify-content-center  ">
+        <div class="col-xl-4 col-md-12 col-lg-4   ">
           <div class="footer_logo ">
             <a href="index.html">
               <img loading="lazy" src="../Imagenes/isotipo1.png" alt="logo" class="logo">
@@ -632,52 +636,58 @@
             </div>
           
           <div class="col-xl-2 col-md-6 col-lg-2 ">
-            <ul class=" links col-3 list-unstyled">
+            <ul class=" links col-1n2 list-unstyled">
               <li><a href="index.html" class="text-reset  "> Inicio</a></li>
   
               <li><a href="excursiones.html" class="text-reset">Excursiones</li>
               <li><a href="nosotros.html" class="text-reset">Nosotros</a></li>
               <li><a href="contacto.html" class="text-reset">Contacto</a></li>
               
-  
+
             </ul>
           
           </div>
-          <div class="col-xl-3 col-md-12 col-lg-3 ">
-            <ul class="links col-3 list-unstyled">
-              <li><a href="preguntas.html" class="text-reset">Preguntas</a></li>
-              <li><a href="login.html" class="text-reset">Ingresar</a></li>
-              <li class="font-weight-bold text-uppercase fs-4 text  ">Historias</li>
-              <li><a href="" class="text-reset">Clientes</a></li>
+          <div class="col-xl-2 col-md-6 col-lg-2 ">
+            <ul class="links col-12 list-unstyled">
+              <li class=" text-center fw-bold  " > MEDIOS DE PAGO:</li>
+              <li> <i class="far fa-credit-card"></i> Tarjeta de Credito</li>
+              
+              <li > <i class="far fa-money-bill-alt"></i> Efectivo</li>
+             
+                <li> <i class="fas fa-landmark"></i> Transferencia Bancaria</li>
+                
             </ul>
           </div>
           <div class=" col-xl-3 col-md-12 col-lg-3 ">
             <h3 class="footer_title text-center fw-bold ">
             Recibir promociones
             </h3>
-            <form action="error404.php" method="POST" enctype="multipart/form-data ">
+            <form action="" method="POST" enctype="multipart/form-data ">
               <div class="input-group mb-3">
-                <input type="text" class="form-control" placeholder="nombre.apellido@gmai.com" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                <input type="text" class="form-control" placeholder="nombre.apellido@gmail.com" aria-label="Recipient's username" aria-describedby="basic-addon2">
               </div>
               <div class="check--terms">
                 <input id="checkTerms" type="checkbox" name="tyc">
-                <label class="mr-1" for="tyc">
+                <label class="mr-1" for="">
                     Acepto
-                        <a href="/terminos.html" >términos y condiciones</a>
+                        <a href="#" >términos y condiciones</a>
                     </label>
                     <div>
                         <button type="submit" class="button  button-small">
                            <h5 tex-center> Suscribirme</h5>
+                           <a href="#"></a> 
                         </button>
                     </div>
                 </div>                         
             </form>
         </div>
           <div class="box__copyright col-12"> 
-            <hr>
-            <p>|Todos los derechos reservados © 2021|  </p>
+            
+            <p>|Proyecto Coder House|  </p>
           </div>  
-  </div>
+        </div>
+  
+  </footer>           
   
   </footer>           
    
