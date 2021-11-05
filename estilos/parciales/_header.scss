@@ -1,11 +1,17 @@
 .navbar-nav :hover {
-    border: 1px solid black;
+   
+   
+border: 1px solid;
 
   }
   
 
   .navbar {
     background-color: #CCA77A;
-    padding: 40xp;
-    font-size: large;
+
+  
   }
+  .nav-link a{
+    padding: 10xp;
+  }
+  

@@ -73,14 +73,14 @@ h2 {
 }
 
 .redes .redes__enlace {
-  margin: 0 0 80px 0;
+  margin: 0 0 30px 0;
   color: blanchedalmond;
   font-size: 18px;
   display: inline-block;
   background: #7A805C;
   border-radius: 50%;
   text-align: center;
-  width: 60px;
+  width: 40px;
   width: 10xp;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -195,13 +195,15 @@ h2 {
 }
 
 .navbar-nav :hover {
-  border: 1px solid black;
+  border: 1px solid;
 }
 
 .navbar {
   background-color: #CCA77A;
-  padding: 40xp;
-  font-size: large;
+}
+
+.nav-link a {
+  padding: 10xp;
 }
 
 .login-contacto {
@@ -458,6 +460,19 @@ h2 {
     top: 40%;
     left: 50%;
   }
+}
+
+.dark-bg {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.45)), to(rgba(0, 0, 0, 0.45))), url(../Imagenes/inicio.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(../Imagenes/inicio.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/*imagen Hero*/
+#hero .container {
+  height: 80vh;
 }
 
 .login-form {
