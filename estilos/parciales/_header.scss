@@ -1,17 +1,20 @@
-.navbar-nav :hover {
-   
-   
-border: 1px solid;
 
-  }
   
 
+  .b-effect {
+    border-bottom: 2px solid transparent;
+    color: #fffff9 !important;
+  
+    &:hover {
+      border-bottom-color: #e9e8f0;
+      transition: 750ms;
+      transform: scale(1.1);
+    } 
+  }
   .navbar {
-    background-color: #CCA77A;
-
-  
+    background-color: transparent !important;
   }
-  .nav-link a{
-    padding: 10xp;
-  }
+  .logo-effect{
+    color: #f1f1e9 !important;
+  } 
   

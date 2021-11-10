@@ -58,7 +58,7 @@ h2 {
 }
 
 .redes {
-  background: #CCA77A;
+  background: #928f8f;
   color: #fff;
   font-size: 20px;
   text-align: center;
@@ -96,7 +96,7 @@ h2 {
 
 .redes .caja-footer {
   border-top-left-radius: 25rem;
-  background: #7A805C;
+  background: #789DCA;
   position: relative;
   text-decoration: none;
   color: cornsilk;
@@ -194,16 +194,25 @@ h2 {
           justify-content: space-between;
 }
 
-.navbar-nav :hover {
-  border: 1px solid;
+.b-effect {
+  border-bottom: 2px solid transparent;
+  color: #fffff9 !important;
+}
+
+.b-effect:hover {
+  border-bottom-color: #e9e8f0;
+  -webkit-transition: 750ms;
+  transition: 750ms;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .navbar {
-  background-color: #CCA77A;
+  background-color: transparent !important;
 }
 
-.nav-link a {
-  padding: 10xp;
+.logo-effect {
+  color: #f1f1e9 !important;
 }
 
 .login-contacto {
@@ -463,8 +472,8 @@ h2 {
 }
 
 .dark-bg {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.45)), to(rgba(0, 0, 0, 0.45))), url(../Imagenes/inicio.jpg);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(../Imagenes/inicio.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.45)), to(rgba(0, 0, 0, 0.45))), url(../Imagenes/ingreso1.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(../Imagenes/ingreso1.jpg);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -473,6 +482,12 @@ h2 {
 /*imagen Hero*/
 #hero .container {
   height: 80vh;
+}
+
+.titulo__h1 {
+  font-family: allison;
+  color: white;
+  width: 30rem;
 }
 
 .login-form {
