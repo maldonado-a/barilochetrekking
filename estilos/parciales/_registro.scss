@@ -2,7 +2,7 @@
 
 .login-form {
   padding: 200px 0;
-  background: url(../Imagenes/inicio.jpg);
+
   background-size:cover;
 
   form {
@@ -14,6 +14,10 @@
     box-shadow: 0px 2px 10px rgb(131, 130, 130);
   }
 
+  .ingresar_ .dark-bg {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(../Imagenes/inicio.jpg) !important;
+
+  }
   .form-name {
     text-align: center;
     margin-bottom: 25px;
