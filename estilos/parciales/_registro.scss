@@ -2,6 +2,7 @@
 
 .login-form {
   padding: 200px 0;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(../Imagenes/fondo.jpg);
 
   background-size:cover;
 
@@ -14,14 +15,18 @@
     box-shadow: 0px 2px 10px rgb(131, 130, 130);
   }
 
-  .ingresar_ .dark-bg {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(../Imagenes/inicio.jpg) !important;
-
-  }
+  
   .form-name {
     text-align: center;
     margin-bottom: 25px;
     line-height: 100px;
+  }
+  .form-name img{
+    height: 8rem;
+  width: 13rem;
+  padding: 1rem;
+  
+
   }
 
   .item {
@@ -51,11 +56,6 @@
 }
 
 
-
-
-
-
-
 .fieldset {
   display: block;
   margin-inline-start: 2px;
@@ -68,4 +68,24 @@
   border-width: 2px;
   border-style: groove;
   
+}
+
+.boton__ {     
+  background:rgb(146, 143, 143);
+width: 8rem;
+height: 2rem;
+
+border-radius: 1rem;
+margin: 0;
+
+ 
+
+ &:hover, &:focus {
+   background:#01252e;
+
+   color: white;
+   -webkit-transition: background-color 1s ease-out;
+   transition: background-color 1s ease-out;
+   
+ }
 }

@@ -1,39 +1,47 @@
 .info {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    color: #fff;
-    background-color: rgba(91, 94, 54, 0.233);
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    text-align: center;
-    padding: 50px;
-    opacity: 0.2;
-    -webkit-transform: scale(0);
-            transform: scale(0);
-    -webkit-transition: all .5s;
-    transition: all .5s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  background-color: rgba(91, 94, 54, 0.233);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding: 50px;
+  opacity: 0.2;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.excursion:hover .info {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.team-wrapper {
+  padding: 60px 0;
+}
+
+.section-title {
+  padding: 20px 0;
+}
+
+
+.excursion {
+  position: relative;
+  overflow: hidden;
+  -webkit-box-shadow: 4px 4px 3px 2px rgba(0, 0, 0, 0.4);
+          box-shadow: 4px 4px 3px 2px rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
   }
-  
-  .excursion:hover .info {
-    opacity: 1;
-    -webkit-transform: scale(1);
-            transform: scale(1);
-  }
-  
-  .team-wrapper {
-    padding: 60px 0;
-  }
-  
-  .section-title {
-    padding: 20px 0;
-  }
-  
   
   

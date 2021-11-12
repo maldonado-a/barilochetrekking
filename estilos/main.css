@@ -13,7 +13,7 @@ body {
   background-color: whitesmoke;
   color: white;
   line-height: 1.6;
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 ul {
@@ -77,7 +77,7 @@ h2 {
   color: blanchedalmond;
   font-size: 18px;
   display: inline-block;
-  background: #7A805C;
+  background: #01252e;
   border-radius: 50%;
   text-align: center;
   width: 40px;
@@ -95,8 +95,9 @@ h2 {
 }
 
 .redes .caja-footer {
+  padding: 2rem;
   border-top-left-radius: 25rem;
-  background: #789DCA;
+  background: #01252e;
   position: relative;
   text-decoration: none;
   color: cornsilk;
@@ -109,15 +110,24 @@ h2 {
   padding: 0xp;
 }
 
-.redes footer_title {
-  color: white;
-}
-
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 768px) {
   .input-group {
-    width: 50%;
+    width: 70%;
     margin: 0 auto;
   }
+}
+
+@media screen and (max-width: 425px) {
+  .input-group {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+.footer_logo img {
+  height: 8rem;
+  width: 13rem;
+  padding: 1rem;
 }
 
 .titulo__h1 {
@@ -208,11 +218,22 @@ h2 {
 }
 
 .navbar {
-  background: transparent !important;
+  background: #01252e !important;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .logo-effect {
   color: #f1f1e9 !important;
+}
+
+.logo_nav {
+  margin-left: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .boton_ {
+    margin-bottom: 5rem;
+  }
 }
 
 .login-contacto {
@@ -226,9 +247,10 @@ h2 {
   padding: 40px 60px;
   -webkit-box-shadow: 0px 2px 10px #838282;
           box-shadow: 0px 2px 10px #838282;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.45)), to(rgba(0, 0, 0, 0.45))), url(../Imagenes/ingreso1.jpg);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(../Imagenes/ingreso1.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.45)), to(rgba(0, 0, 0, 0.45))), url(../Imagenes/fondo1.jpeg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(../Imagenes/fondo1.jpeg);
   background-size: cover;
+  position: center;
 }
 
 .contact-form {
@@ -270,21 +292,20 @@ h2 {
   border: none;
   background: none;
   outline: 0;
-  color: #fff;
+  color: #e6dada;
   border-bottom: 1px solid #ebc7c7;
 }
 
 .contact-form form button {
-  background-color: #CCA77A;
-  background: #CCA77A;
+  background: #01252e;
   border: 0;
   text-transform: uppercase;
   padding: 1em;
 }
 
 .contact-form form button:hover, .contact-form form button:focus {
-  background: #dacbcb;
-  color: black;
+  background: #928f8f;
+  color: #070707;
   -webkit-transition: background-color 1s ease-out;
   transition: background-color 1s ease-out;
 }
@@ -300,199 +321,61 @@ h2 {
 
 @media screen and (max-width: 680px) {
   .contact-form {
-    width: 17rem;
+    width: 100%;
+    margin: 0;
   }
 }
 
-.indexMain__carrusel {
-  width: 100%;
-  height: 50vh;
-}
-
-.indexMain__carrusel .indexMain__carruselContainer {
-  width: 100%;
-  height: 100%;
-}
-
-.carousel-inner {
-  height: 100%;
-}
-
-.carousel-item {
-  width: 100%;
-  height: 100%;
-  position: relative;
-}
-
-.carousel-item img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -webkit-filter: brightness(70%);
-          filter: brightness(70%);
-}
-
-.carousel-item__h3, .carousel-item__h4, .carousel-item__a {
-  position: absolute;
-  color: #DDDDDA;
-  font-size: 3rem;
-  top: 3rem;
-  left: 10rem;
-}
-
-@media only screen and (max-width: 991px) {
-  .carousel-item__h3, .carousel-item__h4, .carousel-item__a {
-    font-size: 2.5rem;
-    left: 8rem;
-  }
-}
-
-@media only screen and (max-width: 767px) {
-  .carousel-item__h3, .carousel-item__h4, .carousel-item__a {
-    font-size: 2rem;
-    left: 6rem;
-  }
-}
-
-@media only screen and (max-width: 575px) {
-  .carousel-item__h3, .carousel-item__h4, .carousel-item__a {
-    font-size: 1.8rem;
-    left: 2.5rem;
-  }
-}
-
-.carousel-item__h4 {
-  font-size: 1.3rem;
-  top: 8rem;
-}
-
-@media only screen and (max-width: 575px) {
-  .carousel-item__h4 {
-    font-size: 0.8rem;
-  }
-}
-
-.carousel-item__a {
-  top: 11rem;
-  -webkit-text-decoration: 1px solid transparent;
-          text-decoration: 1px solid transparent;
-  font-size: 3rem;
-  font-weight: 700;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-
-.carousel-item:hover > .carousel-item__a {
-  color: #DDDDDA;
-  -webkit-transform: scale(1.1, 1.1);
-          transform: scale(1.1, 1.1);
-  text-decoration: underline;
-}
-
-.carousel-control-next,
-.carousel-control-prev {
-  width: 11%;
-}
-
-.excursion {
-  position: relative;
-  overflow: hidden;
-  -webkit-box-shadow: 4px 4px 3px 2px rgba(0, 0, 0, 0.4);
-  box-shadow: 4px 4px 3px 2px rgba(0, 0, 0, 0.4);
-  border-radius: 5px;
-}
-
-.banner a {
-  font-size: 2rem;
-  display: inline-block;
-  padding: 60px 60px;
-  background: #CCA77A;
-  border-radius: 5px;
-  color: white;
-  text-decoration: none;
-  position: absolute;
-  top: 80%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  font-size: 20px;
-  padding: 5px 5px;
-  top: 65%;
-  left: 50%;
-}
-
-.banner a:hover {
-  background: #666664;
-}
-
-@media screen and (max-width: 768px) {
-  .banner .logo__carrusel {
-    position: absolute;
-    font-size: 1rem;
-  }
-  .banner a {
-    background-color: #DDDDDA;
-    padding: 1px 1px;
-    top: 90%;
-    left: 60%;
-    font-size: 3rem;
-    display: inline-block;
-    position: absolute;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-  }
-}
-
-@media screen and (max-width: 768px) and (min-width: 425px) {
-  .banner a {
-    font-size: 1rem;
-    display: inline-block;
-    position: absolute;
-    padding: 20px 20px;
-    top: 70%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-    color: white;
-  }
-}
-
-@media screen and (max-width: 768px) and (min-width: 320px) {
-  .banner a {
-    font-size: 1rem;
-    display: inline-block;
-    position: absolute;
-    padding: 3px 3px;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-    color: white;
-    top: 40%;
-    left: 50%;
-  }
-}
-
-.dark-bg {
+.imagen__inicio {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.45)), to(rgba(0, 0, 0, 0.45))), url(../Imagenes/ingreso1.jpg);
   background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(../Imagenes/ingreso1.jpg);
   background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-}
-
-/*imagen Hero*/
-#hero .container {
-  height: 80vh;
+  height: 120vh;
 }
 
 .titulo__h1 {
   font-family: allison;
   color: white;
-  width: 30rem;
+  padding: 5xp;
+  font-size: 6rem;
+}
+
+.parrafo_ {
+  font-size: x-large;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.boton_ {
+  background: #928f8f;
+  width: 8rem;
+  height: 4rem;
+  margin-top: 8rem;
+  border-radius: 1rem;
+}
+
+.boton_:hover, .boton_:focus {
+  background: #01252e;
+  color: white;
+  -webkit-transition: background-color 1s ease-out;
+  transition: background-color 1s ease-out;
+}
+
+@media screen and (max-width: 768px) {
+  .boton_ {
+    margin-bottom: 5rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .text-center .text-dark {
+    width: 95%;
+  }
 }
 
 .login-form {
   padding: 200px 0;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.45)), to(rgba(0, 0, 0, 0.45))), url(../Imagenes/fondo.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(../Imagenes/fondo.jpg);
   background-size: cover;
 }
 
@@ -506,15 +389,16 @@ h2 {
           box-shadow: 0px 2px 10px #838282;
 }
 
-.login-form .ingresar_ .dark-bg {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.45)), to(rgba(0, 0, 0, 0.45))), url(../Imagenes/inicio.jpg) !important;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(../Imagenes/inicio.jpg) !important;
-}
-
 .login-form .form-name {
   text-align: center;
   margin-bottom: 25px;
   line-height: 100px;
+}
+
+.login-form .form-name img {
+  height: 8rem;
+  width: 13rem;
+  padding: 1rem;
 }
 
 .login-form .item {
@@ -555,6 +439,21 @@ h2 {
   min-inline-size: min-content;
   border-width: 2px;
   border-style: groove;
+}
+
+.boton__ {
+  background: #928f8f;
+  width: 8rem;
+  height: 2rem;
+  border-radius: 1rem;
+  margin: 0;
+}
+
+.boton__:hover, .boton__:focus {
+  background: #01252e;
+  color: white;
+  -webkit-transition: background-color 1s ease-out;
+  transition: background-color 1s ease-out;
 }
 
 .slider li {
@@ -648,6 +547,14 @@ h2 {
 
 .section-title {
   padding: 20px 0;
+}
+
+.excursion {
+  position: relative;
+  overflow: hidden;
+  -webkit-box-shadow: 4px 4px 3px 2px rgba(0, 0, 0, 0.4);
+  box-shadow: 4px 4px 3px 2px rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
 }
 
 .center_body h2 {

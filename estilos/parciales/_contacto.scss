@@ -8,9 +8,11 @@
     padding: 40px 60px;
     
     box-shadow: 0px 2px 10px rgb(131, 130, 130);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(../Imagenes/ingreso1.jpg);
+          background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(../Imagenes/fondo1.jpeg);
 
     background-size:cover;
+
+    position: center;
   }
 
 
@@ -50,20 +52,20 @@
       border: none;
       background: none;
       outline: 0;
-      color: #fff;
+      color: rgb(230, 218, 218);
       border-bottom: 1px solid #ebc7c7;
     }
 
     button {
-    background-color: #CCA77A;
-    background: #CCA77A;
+      background:#01252e;
       border: 0;
       text-transform: uppercase;
       padding: 1em;
 
       &:hover, &:focus {
-        background: #dacbcb;
-        color: rgb(0, 0, 0);
+        background:rgb(146, 143, 143);
+
+        color: rgb(7, 7, 7);
         -webkit-transition: background-color 1s ease-out;
         transition: background-color 1s ease-out;
         
@@ -82,9 +84,12 @@
 }
 }
 @media screen and (max-width: 680px)  { 
-  .contact-form {
+  .contact-form  {
     
-    width: 17rem;
+    width: 100%;
+    margin: 0;
+
 
   }
+  
 }
