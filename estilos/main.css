@@ -57,6 +57,10 @@ h2 {
   margin-bottom: 20px;
 }
 
+main {
+  overflow-x: hidden;
+}
+
 .redes {
   background: #928f8f;
   color: #fff;
@@ -233,6 +237,9 @@ h2 {
 @media screen and (max-width: 768px) {
   .boton_ {
     margin-bottom: 5rem;
+  }
+  .logo_nav {
+    width: 6rem;
   }
 }
 
