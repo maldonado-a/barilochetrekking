@@ -1,10 +1,9 @@
-
-
 .login-form {
   padding: 200px 0;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(../Imagenes/fondo.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    url(../Imagenes/fondo.jpg);
 
-  background-size:cover;
+  background-size: cover;
 
   form {
     max-width: 500px;
@@ -15,18 +14,15 @@
     box-shadow: 0px 2px 10px rgb(131, 130, 130);
   }
 
-  
   .form-name {
     text-align: center;
     margin-bottom: 25px;
     line-height: 100px;
   }
-  .form-name img{
+  .form-name img {
     height: 8rem;
-  width: 13rem;
-  padding: 1rem;
-  
-
+    width: 13rem;
+    padding: 1rem;
   }
 
   .item {
@@ -34,27 +30,19 @@
     margin-bottom: 25px;
     padding: 10px 20px;
   }
-
 }
-.login-txt a{
+.login-txt a {
   text-decoration: none !important;
   color: black !important;
 }
 
-
-    
-      
-    
- 
-  
-@media screen and (max-width: 680px)  { 
+@media screen and (max-width: 680px) {
   .login-form form {
     width: 90%;
     margin: 0 auto;
     padding: 40px 18px;
   }
 }
-
 
 .fieldset {
   display: block;
@@ -67,25 +55,22 @@
   min-inline-size: min-content;
   border-width: 2px;
   border-style: groove;
-  
 }
 
-.boton__ {     
-  background:rgb(146, 143, 143);
-width: 8rem;
-height: 2rem;
+.boton__ {
+  background: rgb(146, 143, 143);
+  width: 10rem;
+  height: 2rem;
 
-border-radius: 1rem;
-margin: 0;
+  border-radius: 1rem;
+  margin: 0;
 
- 
+  &:hover,
+  &:focus {
+    background: #01252e;
 
- &:hover, &:focus {
-   background:#01252e;
-
-   color: white;
-   -webkit-transition: background-color 1s ease-out;
-   transition: background-color 1s ease-out;
-   
- }
+    color: white;
+    -webkit-transition: background-color 1s ease-out;
+    transition: background-color 1s ease-out;
+  }
 }

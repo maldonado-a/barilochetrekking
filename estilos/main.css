@@ -143,13 +143,60 @@ main {
   margin-left: 30px;
 }
 
+.botones {
+  margin-bottom: 4rem;
+}
+
+a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .row:last-child {
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  a {
+    margin-top: 0.5rem;
+  }
+}
+
+.columnas h3 {
+  margin-bottom: 2rem;
+}
+
+.columnas ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  text-align: center;
+  margin-right: 0.8rem;
+}
+
 .persona__parrafo {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   color: black;
   font-weight: bolder;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 .persona__titulo {
@@ -170,8 +217,8 @@ main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-transition: 0.10s;
-  transition: 0.10s;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
   color: red;
 }
 
@@ -199,22 +246,12 @@ main {
   padding: 10px;
 }
 
-.botones_excursiones {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-}
-
 .b-effect {
   border-bottom: 2px solid transparent;
-  color: #fffff9 !important;
 }
 
 .b-effect:hover {
-  border-bottom-color: #e9e8f0;
+  border-bottom-color: #010005;
   -webkit-transition: 750ms;
   transition: 750ms;
   -webkit-transform: scale(1.1);
@@ -223,7 +260,7 @@ main {
 
 .navbar {
   background: #01252e !important;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 .logo-effect {
@@ -330,13 +367,6 @@ main {
   .contact-form {
     width: 100%;
     margin: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
   }
 }
 
@@ -344,25 +374,26 @@ main {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.45)), to(rgba(0, 0, 0, 0.45))), url(../Imagenes/ingreso1.jpg);
   background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(../Imagenes/ingreso1.jpg);
   background-size: cover;
-  height: 30rem;
+  height: 110vh;
 }
 
 .titulo__h1 {
   font-family: allison;
   color: white;
-  padding: 5;
-  font-size: 6rem;
+  font-size: 5rem;
 }
 
 .parrafo_ {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin-top: 0.1rem;
 }
 
 .boton_pre {
+  text-decoration: none;
   background: #928f8f;
-  width: 8rem;
+  width: 10rem;
   height: 4rem;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
   margin-top: 3rem;
   border-radius: 1rem;
 }
@@ -375,15 +406,42 @@ main {
 }
 
 @media screen and (max-width: 768px) {
-  .boton_ {
-    margin-bottom: 5rem;
+  .boton__ {
+    margin-bottom: 10rem;
   }
 }
 
 @media screen and (max-width: 375px) {
   .text-center .text-dark {
-    width: 90%;
+    width: 95%;
   }
+}
+
+.imagen__previaje {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.45)), to(rgba(0, 0, 0, 0.45))), url(../Imagenes/ingreso2.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(../Imagenes/ingreso2.jpg);
+  background-size: cover;
+  height: 90vh;
+}
+
+.logo_pre {
+  width: 50%;
+}
+
+.boton_pre {
+  background: #928f8f;
+  width: 10rem;
+  height: 4rem;
+  margin-bottom: 1rem;
+  margin-top: 3rem;
+  border-radius: 1rem;
+}
+
+.boton_pre:hover, .boton_pre:focus {
+  background: #01252e;
+  color: white;
+  -webkit-transition: background-color 1s ease-out;
+  transition: background-color 1s ease-out;
 }
 
 .login-form {
@@ -457,7 +515,7 @@ main {
 
 .boton__ {
   background: #928f8f;
-  width: 8rem;
+  width: 10rem;
   height: 2rem;
   border-radius: 1rem;
   margin: 0;
@@ -477,7 +535,7 @@ main {
   width: 100%;
   height: 100%;
   color: #fff;
-  background-color: rgba(91, 94, 54, 0.233);
+  background-color: rgba(3, 3, 1, 0.233);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -489,8 +547,8 @@ main {
   opacity: 0.2;
   -webkit-transform: scale(0);
   transform: scale(0);
-  -webkit-transition: all .5s;
-  transition: all .5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .excursion:hover .info {
