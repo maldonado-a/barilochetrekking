@@ -10,7 +10,7 @@ h1 {
 }
 
 body {
-  background-color: whitesmoke;
+  background-color: white;
   color: white;
   line-height: 1.6;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -22,7 +22,7 @@ ul {
 }
 
 .imagenPortada {
-  height: 80vh;
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -48,8 +48,8 @@ img {
 }
 
 .img-effect:hover img {
-  -webkit-transform: scale(1.5);
-  transform: scale(1.5);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 h2 {
@@ -136,7 +136,7 @@ h2 {
   color: black;
   margin-top: 50px;
   font-family: serif;
-  margin-left: 30xp;
+  margin-left: 30px;
 }
 
 .persona__parrafo {
@@ -192,16 +192,16 @@ h2 {
 }
 
 .persona .reserva_excursion {
-  padding: 10xp;
+  padding: 10px;
 }
 
-.row_center {
+.botones_excursiones {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .b-effect {
@@ -254,7 +254,7 @@ h2 {
 }
 
 .contact-form {
-  max-width: 600px;
+  max-width: 800px;
   margin: auto;
   padding: 40px 60px;
   border-top-left-radius: 10px;
@@ -319,10 +319,17 @@ h2 {
   margin: 0 0 1rem 0;
 }
 
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 425px) {
   .contact-form {
     width: 100%;
     margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
 }
 
@@ -330,30 +337,30 @@ h2 {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.45)), to(rgba(0, 0, 0, 0.45))), url(../Imagenes/ingreso1.jpg);
   background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(../Imagenes/ingreso1.jpg);
   background-size: cover;
-  height: 120vh;
+  height: 30rem;
 }
 
 .titulo__h1 {
   font-family: allison;
   color: white;
-  padding: 5xp;
+  padding: 5;
   font-size: 6rem;
 }
 
 .parrafo_ {
-  font-size: x-large;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.boton_ {
+.boton_pre {
   background: #928f8f;
   width: 8rem;
   height: 4rem;
-  margin-top: 8rem;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
   border-radius: 1rem;
 }
 
-.boton_:hover, .boton_:focus {
+.boton_pre:hover, .boton_pre:focus {
   background: #01252e;
   color: white;
   -webkit-transition: background-color 1s ease-out;
@@ -366,9 +373,9 @@ h2 {
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 375px) {
   .text-center .text-dark {
-    width: 95%;
+    width: 90%;
   }
 }
 
@@ -454,62 +461,6 @@ h2 {
   color: white;
   -webkit-transition: background-color 1s ease-out;
   transition: background-color 1s ease-out;
-}
-
-.slider li {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  font-family: allisons;
-  color: blueviolet;
-  width: 100%;
-  -webkit-animation: cambio 2s alternate;
-  animation: cambio 2s alternate;
-}
-
-.slider li h1 {
-  color: red;
-  font-family: Arial;
-  padding: 20xp;
-}
-
-@-webkit-keyframes cambio {
-  0% {
-    margin-left: 0%;
-  }
-  10% {
-    margin-left: 10%;
-  }
-  20% {
-    margin-left: -100%;
-  }
-  30% {
-    margin-left: -100%;
-  }
-  45% {
-    margin-left: -200%;
-  }
-}
-
-@keyframes cambio {
-  0% {
-    margin-left: 0%;
-  }
-  10% {
-    margin-left: 10%;
-  }
-  20% {
-    margin-left: -100%;
-  }
-  30% {
-    margin-left: -100%;
-  }
-  45% {
-    margin-left: -200%;
-  }
 }
 
 .info {

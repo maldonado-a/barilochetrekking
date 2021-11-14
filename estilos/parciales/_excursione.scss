@@ -1,11 +1,13 @@
 
+
+
 .titulo__h1 {
   font-size: 70px;
   text-align: center;
   color:black;
   margin-top: 50px;
   font-family:serif;
-  margin-left: 30xp;
+  margin-left: 30px;
  
   
 }
@@ -63,10 +65,24 @@
   }
   
 .reserva_excursion{
-  padding: 10xp;
+  padding: 10px;
 }}
 
-.row_center{
+
+
+.botones_excursiones{
   display: flex;
-  justify-content:space-between;
+  justify-content: space-evenly;
+
+  
+  
+  
+
+  
+
+
+  
 }
+
+
+

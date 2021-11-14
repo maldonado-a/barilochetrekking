@@ -1,4 +1,3 @@
-@import"./media";
 
 
 
@@ -7,7 +6,7 @@
       background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(../Imagenes/ingreso1.jpg);
     
     background-size: cover;
-    height: 120vh;
+    height: 30rem;
     
     }
 
@@ -20,41 +19,41 @@
 .titulo__h1 { 
   font-family: allison;
   color:white;
-padding: 5xp;
+padding: 5;
  
 font-size:6rem;
 
 }
 .parrafo_{
   
-  font-size: x-large;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
  
 
 }
 
 
-.boton_ {     
+
+
+.boton_pre  {
+
   background:rgb(146, 143, 143);
-width: 8rem;
-height: 4rem;
-margin-top: 8rem;
-border-radius: 1rem;
-
-
+  width: 8rem;
+  height: 4rem;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+  border-radius: 1rem;
+  &:hover, &:focus {
+    background:#01252e;
  
-
- &:hover, &:focus {
-   background:#01252e;
-
-   color: white;
-   -webkit-transition: background-color 1s ease-out;
-   transition: background-color 1s ease-out;
-   
- }
+    color: white;
+    -webkit-transition: background-color 1s ease-out;
+    transition: background-color 1s ease-out;
+    
+  }
+ 
 }
 
-
+ 
 
 @media screen and (max-width: 768px){
   .boton_{
@@ -63,10 +62,11 @@ border-radius: 1rem;
 margin-bottom: 5rem;
 
   }}
-  @media screen and (max-width: 320px){
+  @media screen and (max-width: 375px){
   .text-center .text-dark{
     
-    width: 95%;
+    width: 90%;
 
   }
 }
+
