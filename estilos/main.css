@@ -1,7 +1,9 @@
-@charset "UTF-8";
 /*=== Propiedades generales para toda la pagina===*/
 @import url("https://kit.fontawesome.com/04f7d0d100.js");
 @import url("https://fonts.googleapis.com/css2?family=Allison&display=swap");
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700");
+@import url("https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700");
 h1 {
   text-align: center;
   opacity: 0.7;
@@ -150,7 +152,7 @@ h2 {
   }
 }
 
-/*=== Propiedades para cada destino en Index, Europa, América y Asia. ===*/
+/*=== Propiedades para los bontones de excursiones ===*/
 .botones {
   margin-bottom: 3rem;
 }
@@ -166,6 +168,14 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+/*=== Propiedades para iconos de excursiones ===*/
+hr {
+  color: #01252e;
+  margin-top: 5rem !important;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .card-argentina {
@@ -287,6 +297,10 @@ a {
     font-size: 1rem !important;
     margin-top: 1rem !important;
   }
+}
+
+.carousel button {
+  height: 300px;
 }
 
 /*=== Propiedades para el menu del nav===*/
@@ -418,7 +432,7 @@ a {
 
 /*=== Propiedades para la imagen del fondo del registro===*/
 .login-form {
-  padding: 200px 0;
+  padding: 100px 0;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.45)), to(rgba(0, 0, 0, 0.45))), url(../Imagenes/fondo.jpg);
   background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(../Imagenes/fondo.jpg);
   background-size: cover;

@@ -1,4 +1,4 @@
-/*=== Propiedades para cada destino en Index, Europa, América y Asia. ===*/
+/*=== Propiedades para los bontones de excursiones ===*/
 
 .botones {
   margin-bottom: 3rem;
@@ -11,6 +11,15 @@
 a {
   display: flex;
   justify-content: center;
+}
+
+/*=== Propiedades para iconos de excursiones ===*/
+
+hr {
+  color: #01252e;
+  margin-top: 5rem !important;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .card-argentina {
@@ -108,4 +117,8 @@ a {
     font-size: 1rem !important;
     margin-top: 1rem !important;
   }
+}
+
+.carousel button {
+  height: 300px;
 }
