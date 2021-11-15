@@ -1,0 +1,127 @@
+/*=== Propiedades para la informacion de las excursiones===*/
+
+.info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  background-color: rgba(3, 3, 1, 0.233);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  padding: 50px;
+  opacity: 0.2;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.excursion:hover .info {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.team-wrapper {
+  padding: 60px 0;
+}
+
+.section-title {
+  padding: 20px 0;
+}
+
+.excursion {
+  position: relative;
+  overflow: hidden;
+  -webkit-box-shadow: 4px 4px 3px 2px rgba(0, 0, 0, 0.4);
+  box-shadow: 4px 4px 3px 2px rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+}
+
+/*=== Propiedades para la imagen del index===*/
+
+.imagen__inicio {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    url(../Imagenes/ingreso1.jpg);
+
+  background-size: cover;
+  height: 95vh;
+}
+/*=== Propiedades el titulo del index===*/
+
+.titulo__h1 {
+  font-family: allison;
+  color: white;
+
+  font-size: 8rem;
+}
+
+.parrafo_ {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin-top: 0.1rem;
+}
+
+/*=== Propiedades para el boton del pre-viaje===*/
+
+.boton_pre {
+  text-decoration: none;
+  background: rgb(146, 143, 143);
+  width: 10rem;
+  height: 4rem;
+  margin-bottom: 1rem;
+  margin-top: 3rem;
+  border-radius: 1rem;
+  &:hover,
+  &:focus {
+    background: #01252e;
+
+    color: white;
+    -webkit-transition: background-color 1s ease-out;
+    transition: background-color 1s ease-out;
+  }
+}
+/*=== Propiedades para la imagen pre-viaje===*/
+
+.imagen__previaje {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    url(../Imagenes/ingreso2.jpg);
+
+  background-size: cover;
+  height: 90vh;
+}
+
+.logo_pre {
+  width: 50%;
+}
+/*=== Propiedades para el boton pre-viaje===*/
+
+.boton_pre {
+  background: rgb(146, 143, 143);
+  width: 10rem;
+  height: 4rem;
+  margin-bottom: 1rem;
+  margin-top: 3rem;
+  border-radius: 1rem;
+  &:hover,
+  &:focus {
+    background: #01252e;
+
+    color: white;
+    -webkit-transition: background-color 1s ease-out;
+    transition: background-color 1s ease-out;
+  }
+}
+
+/*=== Media Query el parrafo de la imagen===*/
+
+@media screen and (max-width: 375px) {
+  .text-center .text-dark {
+    width: 95%;
+  }
+}

@@ -1,10 +1,10 @@
+@charset "UTF-8";
+/*=== Propiedades generales para toda la pagina===*/
 @import url("https://kit.fontawesome.com/04f7d0d100.js");
 @import url("https://fonts.googleapis.com/css2?family=Allison&display=swap");
 h1 {
-  color: b;
   text-align: center;
   opacity: 0.7;
-  font-family: arial;
   word-spacing: 2px;
   font-size: 50px;
 }
@@ -13,7 +13,7 @@ body {
   background-color: white;
   color: white;
   line-height: 1.6;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 ul {
@@ -43,8 +43,8 @@ img {
 }
 
 .img-effect img {
-  -webkit-transition: all .9s ease;
-  transition: all .9s ease;
+  -webkit-transition: all 0.9s ease;
+  transition: all 0.9s ease;
 }
 
 .img-effect:hover img {
@@ -57,15 +57,13 @@ h2 {
   margin-bottom: 20px;
 }
 
-main {
-  overflow-x: hidden;
-}
-
+/*=== Propiedades para las redes sociales===*/
 .redes {
   background: #928f8f;
   color: #fff;
   font-size: 20px;
   text-align: center;
+  /*=== Propiedades el footer===*/
 }
 
 .redes .redes__titulo {
@@ -91,7 +89,7 @@ main {
 }
 
 .redes .redes__enlace :hover {
-  color: #DDDDDA;
+  color: #ddddda;
   -webkit-transform: scale(1.1, 1.1);
           transform: scale(1.1, 1.1);
   -webkit-text-decoration: double;
@@ -105,6 +103,9 @@ main {
   position: relative;
   text-decoration: none;
   color: cornsilk;
+  /*=== Propiedades para el logo del footer===*/
+  /*=== Propiedades para el boton del footer===*/
+  /*=== Propiedades media query para el imput del footer===*/
 }
 
 .redes .caja-footer .links a {
@@ -114,37 +115,48 @@ main {
   padding: 0xp;
 }
 
+.redes .caja-footer .footer_logo img {
+  height: 8rem;
+  width: 13rem;
+  padding: 1rem;
+}
+
+.redes .caja-footer .boton__ {
+  background: #928f8f;
+  width: 8rem;
+  height: 2rem;
+  border-radius: 1rem;
+  margin: 0;
+}
+
+.redes .caja-footer .boton__:hover, .redes .caja-footer .boton__:focus {
+  background: #01252e;
+  color: white;
+  -webkit-transition: background-color 1s ease-out;
+  transition: background-color 1s ease-out;
+}
+
 @media screen and (max-width: 768px) {
-  .input-group {
+  .redes .caja-footer .input-group {
     width: 70%;
     margin: 0 auto;
   }
 }
 
 @media screen and (max-width: 425px) {
-  .input-group {
+  .redes .caja-footer .input-group {
     width: 100%;
     margin: 0 auto;
   }
 }
 
-.footer_logo img {
-  height: 8rem;
-  width: 13rem;
-  padding: 1rem;
-}
-
-.titulo__h1 {
-  font-size: 70px;
-  text-align: center;
-  color: black;
-  margin-top: 50px;
-  font-family: serif;
-  margin-left: 30px;
-}
-
+/*=== Propiedades para cada destino en Index, Europa, América y Asia. ===*/
 .botones {
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
+}
+
+.boton_pre {
+  width: 12rem !important;
 }
 
 a {
@@ -156,16 +168,48 @@ a {
           justify-content: center;
 }
 
-@media (min-width: 768px) {
-  .row:last-child {
-    margin-top: 1rem;
-  }
+.card-argentina {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-@media (max-width: 768px) {
-  a {
-    margin-top: 0.5rem;
-  }
+.card-argentina .img-effect {
+  width: 5rem;
+}
+
+.carousel img {
+  height: 220px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.card {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.card .slide {
+  width: 60%;
+}
+
+.card .carousel img {
+  height: 300px;
 }
 
 .columnas h3 {
@@ -190,68 +234,68 @@ a {
   margin-right: 0.8rem;
 }
 
-.persona__parrafo {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: black;
-  font-weight: bolder;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-}
-
-.persona__titulo {
-  text-align: center;
-  color: black;
-  margin-top: 50px;
-  font-family: serif;
-  margin-left: 20xp;
-}
-
-.persona__columna {
-  margin: 5%;
-}
-
-.persona__columna :hover {
-  border-bottom: 1px grey solid;
+.boton_excursiones {
   text-decoration: none;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-transition: 0.1s;
-  transition: 0.1s;
-  color: red;
+  background: #928f8f;
+  width: 10rem;
+  height: 4rem;
+  border-radius: 1rem;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
 }
 
-.persona__contenedor {
-  border-radius: 10xp;
-  display: -ms-grid;
-  display: grid;
+.boton_excursiones:hover, .boton_excursiones:focus {
+  background: #01252e;
+  color: white;
+  -webkit-transition: background-color 1s ease-out;
+  transition: background-color 1s ease-out;
 }
 
-@media (min-width: 520px) {
-  .persona__contenedor {
-    -ms-grid-columns: (50%)[2];
-        grid-template-columns: repeat(2, 50%);
+.card-body {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  a {
+    margin-top: 0.5rem;
+  }
+  .card-argentina .img-effect {
+    width: 4rem !important;
+  }
+  .card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .card .slide {
+    width: 100%;
+  }
+  .card-body {
+    width: 100%;
   }
 }
 
-@media (min-width: 728px) {
-  .persona__contenedor {
-    -ms-grid-columns: (33.3%)[3];
-        grid-template-columns: repeat(3, 33.3%);
+@media (min-width: 768px) and (max-width: 1200px) {
+  .boton_pre {
+    margin-right: 1rem;
+    width: 9rem !important;
+    font-size: 1rem !important;
+    margin-top: 1rem !important;
   }
 }
 
-.persona .reserva_excursion {
-  padding: 10px;
-}
-
+/*=== Propiedades para el menu del nav===*/
 .b-effect {
   border-bottom: 2px solid transparent;
 }
 
 .b-effect:hover {
-  border-bottom-color: #010005;
+  border-bottom-color: #e7e5ee;
   -webkit-transition: 750ms;
   transition: 750ms;
   -webkit-transform: scale(1.1);
@@ -267,19 +311,22 @@ a {
   color: #f1f1e9 !important;
 }
 
+/*=== Propiedades para el logo del nav===*/
 .logo_nav {
   margin-left: 2rem;
 }
 
+/*=== Media query para el logo del nav===*/
 @media screen and (max-width: 768px) {
-  .boton_ {
-    margin-bottom: 5rem;
-  }
   .logo_nav {
     width: 6rem;
   }
+  .titulo__h1 {
+    font-size: 5rem !important;
+  }
 }
 
+/*=== Propiedades para la imagen del fondo de contacto===*/
 .login-contacto {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -297,6 +344,7 @@ a {
   position: center;
 }
 
+/*=== Propiedades para el formulario de contacto===*/
 .contact-form {
   max-width: 800px;
   margin: auto;
@@ -305,7 +353,6 @@ a {
   border-top-right-radius: 10px;
   -webkit-box-shadow: 0px 2px 10px #838282;
           box-shadow: 0px 2px 10px #838282;
-  /* CONTACT INFO */
 }
 
 .contact-form form {
@@ -330,9 +377,11 @@ a {
   grid-column: 1 / 3;
 }
 
-.contact-form form button, .contact-form form input, .contact-form form textarea {
+.contact-form form button,
+.contact-form form input,
+.contact-form form textarea {
   width: 100%;
-  padding: .7em;
+  padding: 0.7em;
   border: none;
   background: none;
   outline: 0;
@@ -354,101 +403,26 @@ a {
   transition: background-color 1s ease-out;
 }
 
-.contact-form .contact-info {
-  background: black;
-}
-
-.contact-form .contact-info h4, .contact-form .contact-info ul, .contact-form .contact-info p {
-  text-align: center;
-  margin: 0 0 1rem 0;
-}
-
+/*=== Media Query para el formulario ===*/
 @media screen and (max-width: 425px) {
   .contact-form {
     width: 100%;
     margin: 0;
   }
-}
-
-.imagen__inicio {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.45)), to(rgba(0, 0, 0, 0.45))), url(../Imagenes/ingreso1.jpg);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(../Imagenes/ingreso1.jpg);
-  background-size: cover;
-  height: 110vh;
-}
-
-.titulo__h1 {
-  font-family: allison;
-  color: white;
-  font-size: 5rem;
-}
-
-.parrafo_ {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  margin-top: 0.1rem;
-}
-
-.boton_pre {
-  text-decoration: none;
-  background: #928f8f;
-  width: 10rem;
-  height: 4rem;
-  margin-bottom: 1rem;
-  margin-top: 3rem;
-  border-radius: 1rem;
-}
-
-.boton_pre:hover, .boton_pre:focus {
-  background: #01252e;
-  color: white;
-  -webkit-transition: background-color 1s ease-out;
-  transition: background-color 1s ease-out;
-}
-
-@media screen and (max-width: 768px) {
-  .boton__ {
-    margin-bottom: 10rem;
+  .contact-form p {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 3;
   }
 }
 
-@media screen and (max-width: 375px) {
-  .text-center .text-dark {
-    width: 95%;
-  }
-}
-
-.imagen__previaje {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.45)), to(rgba(0, 0, 0, 0.45))), url(../Imagenes/ingreso2.jpg);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(../Imagenes/ingreso2.jpg);
-  background-size: cover;
-  height: 90vh;
-}
-
-.logo_pre {
-  width: 50%;
-}
-
-.boton_pre {
-  background: #928f8f;
-  width: 10rem;
-  height: 4rem;
-  margin-bottom: 1rem;
-  margin-top: 3rem;
-  border-radius: 1rem;
-}
-
-.boton_pre:hover, .boton_pre:focus {
-  background: #01252e;
-  color: white;
-  -webkit-transition: background-color 1s ease-out;
-  transition: background-color 1s ease-out;
-}
-
+/*=== Propiedades para la imagen del fondo del registro===*/
 .login-form {
   padding: 200px 0;
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.45)), to(rgba(0, 0, 0, 0.45))), url(../Imagenes/fondo.jpg);
   background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(../Imagenes/fondo.jpg);
   background-size: cover;
+  /*=== Propiedades para formulario===*/
 }
 
 .login-form form {
@@ -484,6 +458,23 @@ a {
   color: black !important;
 }
 
+/*=== Propiedades para el boton de registro===*/
+.boton_ {
+  background: #928f8f;
+  width: 8rem;
+  height: 3rem;
+  border-radius: 1rem;
+  margin: 0;
+}
+
+.boton_:hover, .boton_:focus {
+  background: #01252e;
+  color: white;
+  -webkit-transition: background-color 1s ease-out;
+  transition: background-color 1s ease-out;
+}
+
+/*=== Media Query para el registro===*/
 @media screen and (max-width: 680px) {
   .login-form form {
     width: 90%;
@@ -492,42 +483,7 @@ a {
   }
 }
 
-.fieldset {
-  display: block;
-  -webkit-margin-start: 2px;
-          margin-inline-start: 2px;
-  -webkit-margin-end: 2px;
-          margin-inline-end: 2px;
-  -webkit-padding-before: 0.35em;
-          padding-block-start: 0.35em;
-  -webkit-padding-start: 0.75em;
-          padding-inline-start: 0.75em;
-  -webkit-padding-end: 0.75em;
-          padding-inline-end: 0.75em;
-  -webkit-padding-after: 0.625em;
-          padding-block-end: 0.625em;
-  min-inline-size: -webkit-min-content;
-  min-inline-size: -moz-min-content;
-  min-inline-size: min-content;
-  border-width: 2px;
-  border-style: groove;
-}
-
-.boton__ {
-  background: #928f8f;
-  width: 10rem;
-  height: 2rem;
-  border-radius: 1rem;
-  margin: 0;
-}
-
-.boton__:hover, .boton__:focus {
-  background: #01252e;
-  color: white;
-  -webkit-transition: background-color 1s ease-out;
-  transition: background-color 1s ease-out;
-}
-
+/*=== Propiedades para la informacion de las excursiones===*/
 .info {
   position: absolute;
   top: 0;
@@ -573,56 +529,77 @@ a {
   border-radius: 5px;
 }
 
-.center_body h2 {
-  color: #ffff;
-  font-style: 1.5rem;
-  text-transform: uppercase;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  font-size: 200xp;
-}
-
-.center_body p {
-  color: black;
-  font-weight: 20;
-  margin: 20px;
-}
-
-.center_body a {
-  text-decoration: none;
-  color: white;
-  background-color: black;
-  padding: 10px 10px;
-  -webkit-box-shadow: 5px 4px 15px -5px #0046d5;
-  box-shadow: 5px 4px 15px -5px #0046d5;
-  border-radius: 40px;
-  -webkit-transition: all 0.2s linear;
-  transition: all 0.2s linear;
-  height: 6rem;
-  width: 40rem;
-}
-
-.center_body a:hover {
-  color: #ffff;
-  background-color: #31559c;
-}
-
-.main_body {
-  width: 110%;
-  height: 110vh;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))), url(/Imagenes/fondo1.jpeg);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/Imagenes/fondo1.jpeg);
-  background-repeat: no-repeat;
+/*=== Propiedades para la imagen del index===*/
+.imagen__inicio {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.45)), to(rgba(0, 0, 0, 0.45))), url(../Imagenes/ingreso1.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(../Imagenes/ingreso1.jpg);
   background-size: cover;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  height: 95vh;
+}
+
+/*=== Propiedades el titulo del index===*/
+.titulo__h1 {
+  font-family: allison;
+  color: white;
+  font-size: 8rem;
+}
+
+.parrafo_ {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin-top: 0.1rem;
+}
+
+/*=== Propiedades para el boton del pre-viaje===*/
+.boton_pre {
+  text-decoration: none;
+  background: #928f8f;
+  width: 10rem;
+  height: 4rem;
+  margin-bottom: 1rem;
+  margin-top: 3rem;
+  border-radius: 1rem;
+}
+
+.boton_pre:hover, .boton_pre:focus {
+  background: #01252e;
+  color: white;
+  -webkit-transition: background-color 1s ease-out;
+  transition: background-color 1s ease-out;
+}
+
+/*=== Propiedades para la imagen pre-viaje===*/
+.imagen__previaje {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.45)), to(rgba(0, 0, 0, 0.45))), url(../Imagenes/ingreso2.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(../Imagenes/ingreso2.jpg);
+  background-size: cover;
+  height: 90vh;
+}
+
+.logo_pre {
+  width: 50%;
+}
+
+/*=== Propiedades para el boton pre-viaje===*/
+.boton_pre {
+  background: #928f8f;
+  width: 10rem;
+  height: 4rem;
+  margin-bottom: 1rem;
+  margin-top: 3rem;
+  border-radius: 1rem;
+}
+
+.boton_pre:hover, .boton_pre:focus {
+  background: #01252e;
+  color: white;
+  -webkit-transition: background-color 1s ease-out;
+  transition: background-color 1s ease-out;
+}
+
+/*=== Media Query el parrafo de la imagen===*/
+@media screen and (max-width: 375px) {
+  .text-center .text-dark {
+    width: 95%;
+  }
 }
 /*# sourceMappingURL=main.css.map */

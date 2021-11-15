@@ -1,12 +1,15 @@
+/*=== Propiedades para el menu del nav===*/
+
 .b-effect {
   border-bottom: 2px solid transparent;
 
   &:hover {
-    border-bottom-color: #010005;
+    border-bottom-color: #e7e5ee;
     transition: 750ms;
     transform: scale(1.1);
   }
 }
+
 .navbar {
   background: #01252e !important;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
@@ -14,16 +17,18 @@
 .logo-effect {
   color: #f1f1e9 !important;
 }
+/*=== Propiedades para el logo del nav===*/
 
 .logo_nav {
   margin-left: 2rem;
 }
+/*=== Media query para el logo del nav===*/
 
 @media screen and (max-width: 768px) {
-  .boton_ {
-    margin-bottom: 5rem;
-  }
   .logo_nav {
     width: 6rem;
+  }
+  .titulo__h1 {
+    font-size: 5rem !important;
   }
 }

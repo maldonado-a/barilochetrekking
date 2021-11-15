@@ -1,9 +1,13 @@
+/*=== Propiedades para la imagen del fondo del registro===*/
+
 .login-form {
   padding: 200px 0;
   background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
     url(../Imagenes/fondo.jpg);
 
   background-size: cover;
+
+  /*=== Propiedades para formulario===*/
 
   form {
     max-width: 500px;
@@ -36,31 +40,12 @@
   color: black !important;
 }
 
-@media screen and (max-width: 680px) {
-  .login-form form {
-    width: 90%;
-    margin: 0 auto;
-    padding: 40px 18px;
-  }
-}
+/*=== Propiedades para el boton de registro===*/
 
-.fieldset {
-  display: block;
-  margin-inline-start: 2px;
-  margin-inline-end: 2px;
-  padding-block-start: 0.35em;
-  padding-inline-start: 0.75em;
-  padding-inline-end: 0.75em;
-  padding-block-end: 0.625em;
-  min-inline-size: min-content;
-  border-width: 2px;
-  border-style: groove;
-}
-
-.boton__ {
+.boton_ {
   background: rgb(146, 143, 143);
-  width: 10rem;
-  height: 2rem;
+  width: 8rem;
+  height: 3rem;
 
   border-radius: 1rem;
   margin: 0;
@@ -72,5 +57,15 @@
     color: white;
     -webkit-transition: background-color 1s ease-out;
     transition: background-color 1s ease-out;
+  }
+}
+
+/*=== Media Query para el registro===*/
+
+@media screen and (max-width: 680px) {
+  .login-form form {
+    width: 90%;
+    margin: 0 auto;
+    padding: 40px 18px;
   }
 }

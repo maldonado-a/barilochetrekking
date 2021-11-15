@@ -1,81 +1,98 @@
+/*=== Propiedades para las redes sociales===*/
+
 .redes {
-    background:rgb(146, 143, 143);
-    color: #fff;
-    font-size: 20px;
-    text-align: center;
-    
-  
+  background: rgb(146, 143, 143);
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+
   .redes__titulo {
     font-size: 60px;
-   
-    color:white;
+
+    color: white;
     position: relative;
     font-family: allison;
     margin: 0 0 15px 0;
   }
-  
-  
+
   .redes__enlace {
-    margin: 0 0 30px 0; 
-    color: blanchedalmond; 
+    margin: 0 0 30px 0;
+    color: blanchedalmond;
     font-size: 18px;
     display: inline-block;
-    background:#01252e;
+    background: #01252e;
 
-
-    
     border-radius: 50%;
     text-align: center;
     width: 40px;
-   width: 10xp;
+    width: 10xp;
     transition: 0.3s;
   }
   .redes__enlace :hover {
-    color: #DDDDDA;
-  transform: scale(1.1, 1.1);
-  text-decoration:double;
-}
+    color: #ddddda;
+    transform: scale(1.1, 1.1);
+    text-decoration: double;
+  }
 
+  /*=== Propiedades el footer===*/
 
-.caja-footer {
-  
+  .caja-footer {
+    padding: 2rem;
 
- padding: 2rem;
-  
-  border-top-left-radius: 25rem;
+    border-top-left-radius: 25rem;
 
-  background:#01252e;
-  position: relative;
- 
-  text-decoration: none;
-  color: cornsilk;
-  .links a {
+    background: #01252e;
+    position: relative;
+
     text-decoration: none;
-    list-style: none;
-    font-size: 30px;
-    padding: 0xp;
-  }
-}
+    color: cornsilk;
+    .links a {
+      text-decoration: none;
+      list-style: none;
+      font-size: 30px;
+      padding: 0xp;
+    }
 
+    /*=== Propiedades para el logo del footer===*/
 
-}
-@media screen and (max-width: 768px){
-  .input-group{
-    width: 70%;
-    margin: 0 auto;
-  }
-}
-@media screen and (max-width: 425px){
-  .input-group{
-    width: 100%;
-    margin: 0 auto;
-  }
-}
+    .footer_logo img {
+      height: 8rem;
+      width: 13rem;
+      padding: 1rem;
+    }
 
-.footer_logo img{
-    
-  height: 8rem;
-  width: 13rem;
-  padding: 1rem;
-  
+    /*=== Propiedades para el boton del footer===*/
+
+    .boton__ {
+      background: rgb(146, 143, 143);
+      width: 8rem;
+      height: 2rem;
+
+      border-radius: 1rem;
+      margin: 0;
+
+      &:hover,
+      &:focus {
+        background: #01252e;
+
+        color: white;
+        -webkit-transition: background-color 1s ease-out;
+        transition: background-color 1s ease-out;
+      }
+    }
+    /*=== Propiedades media query para el imput del footer===*/
+
+    @media screen and (max-width: 768px) {
+      .input-group {
+        width: 70%;
+        margin: 0 auto;
+      }
+    }
+    @media screen and (max-width: 425px) {
+      .input-group {
+        width: 100%;
+        margin: 0 auto;
+      }
+    }
+  }
 }
