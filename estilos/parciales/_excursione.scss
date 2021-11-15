@@ -66,6 +66,7 @@ hr {
     margin-right: 0.8rem;
   }
 }
+/*=== Propiedades para iconos de excursiones ===*/
 
 .boton_excursiones {
   text-decoration: none;
@@ -85,9 +86,16 @@ hr {
   }
 }
 
-.card-body {
+/*=== Propiedades para el carousel de las excursiones ===*/
+
+.carousel button {
+  height: 300px;
+}
+.card .card-body {
   width: 100%;
 }
+
+/*=== Media Query para los botones de excursiones ===*/
 
 @media (max-width: 768px) {
   a {
@@ -105,9 +113,6 @@ hr {
       width: 100%;
     }
   }
-  .card-body {
-    width: 100%;
-  }
 }
 
 @media (min-width: 768px) and (max-width: 1200px) {
@@ -117,8 +122,4 @@ hr {
     font-size: 1rem !important;
     margin-top: 1rem !important;
   }
-}
-
-.carousel button {
-  height: 300px;
 }
