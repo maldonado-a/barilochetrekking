@@ -57,7 +57,7 @@
 
 .titulo__h1 {
   font-family: allison;
-  color: white;
+  color: white !important;
 
   font-size: 8rem;
 }
@@ -67,25 +67,6 @@
   margin-top: 0.1rem;
 }
 
-/*=== Propiedades para el boton del pre-viaje===*/
-
-.boton_pre {
-  text-decoration: none;
-  background: rgb(146, 143, 143);
-  width: 10rem;
-  height: 4rem;
-  margin-bottom: 1rem;
-  margin-top: 3rem;
-  border-radius: 1rem;
-  &:hover,
-  &:focus {
-    background: #01252e;
-
-    color: white;
-    -webkit-transition: background-color 1s ease-out;
-    transition: background-color 1s ease-out;
-  }
-}
 /*=== Propiedades para la imagen pre-viaje===*/
 
 .imagen__previaje {
@@ -102,6 +83,24 @@
 /*=== Propiedades para el boton pre-viaje===*/
 
 .boton_pre {
+  background: #01252e;
+  color: white;
+  width: 10rem;
+  height: 4rem;
+  margin-bottom: 1rem;
+  margin-top: 3rem;
+  border-radius: 1rem;
+  &:hover,
+  &:focus {
+    background: rgb(146, 143, 143);
+
+    color: black;
+    -webkit-transition: background-color 1s ease-out;
+    transition: background-color 1s ease-out;
+  }
+}
+
+.boton_pree {
   background: rgb(146, 143, 143);
   width: 10rem;
   height: 4rem;

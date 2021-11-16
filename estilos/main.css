@@ -3,7 +3,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Allison&display=swap");
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700");
-@import url("https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700");
 h1 {
   text-align: center;
   opacity: 0.7;
@@ -170,6 +169,10 @@ a {
           justify-content: center;
 }
 
+.tituloo_h1 {
+  color: black !important;
+}
+
 /*=== Propiedades para iconos de excursiones ===*/
 hr {
   color: #01252e;
@@ -247,7 +250,8 @@ hr {
 /*=== Propiedades para iconos de excursiones ===*/
 .boton_excursiones {
   text-decoration: none;
-  background: #928f8f;
+  background: #01252e;
+  color: white;
   width: 10rem;
   height: 4rem;
   border-radius: 1rem;
@@ -260,8 +264,8 @@ hr {
 }
 
 .boton_excursiones:hover, .boton_excursiones:focus {
-  background: #01252e;
-  color: white;
+  background: #928f8f;
+  color: black;
   -webkit-transition: background-color 1s ease-out;
   transition: background-color 1s ease-out;
 }
@@ -554,31 +558,13 @@ hr {
 /*=== Propiedades el titulo del index===*/
 .titulo__h1 {
   font-family: allison;
-  color: white;
+  color: white !important;
   font-size: 8rem;
 }
 
 .parrafo_ {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   margin-top: 0.1rem;
-}
-
-/*=== Propiedades para el boton del pre-viaje===*/
-.boton_pre {
-  text-decoration: none;
-  background: #928f8f;
-  width: 10rem;
-  height: 4rem;
-  margin-bottom: 1rem;
-  margin-top: 3rem;
-  border-radius: 1rem;
-}
-
-.boton_pre:hover, .boton_pre:focus {
-  background: #01252e;
-  color: white;
-  -webkit-transition: background-color 1s ease-out;
-  transition: background-color 1s ease-out;
 }
 
 /*=== Propiedades para la imagen pre-viaje===*/
@@ -595,7 +581,8 @@ hr {
 
 /*=== Propiedades para el boton pre-viaje===*/
 .boton_pre {
-  background: #928f8f;
+  background: #01252e;
+  color: white;
   width: 10rem;
   height: 4rem;
   margin-bottom: 1rem;
@@ -604,6 +591,22 @@ hr {
 }
 
 .boton_pre:hover, .boton_pre:focus {
+  background: #928f8f;
+  color: black;
+  -webkit-transition: background-color 1s ease-out;
+  transition: background-color 1s ease-out;
+}
+
+.boton_pree {
+  background: #928f8f;
+  width: 10rem;
+  height: 4rem;
+  margin-bottom: 1rem;
+  margin-top: 3rem;
+  border-radius: 1rem;
+}
+
+.boton_pree:hover, .boton_pree:focus {
   background: #01252e;
   color: white;
   -webkit-transition: background-color 1s ease-out;
