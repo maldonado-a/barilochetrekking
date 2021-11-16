@@ -478,7 +478,8 @@ hr {
 
 /*=== Propiedades para el boton de registro===*/
 .boton_ {
-  background: #928f8f;
+  background: #01252e;
+  color: white !important;
   width: 8rem;
   height: 3rem;
   border-radius: 1rem;
@@ -486,8 +487,8 @@ hr {
 }
 
 .boton_:hover, .boton_:focus {
-  background: #01252e;
-  color: white;
+  background: #928f8f;
+  color: black !important;
   -webkit-transition: background-color 1s ease-out;
   transition: background-color 1s ease-out;
 }
@@ -564,8 +565,6 @@ hr {
 /*=== Propiedades el titulo del index===*/
 .titulo__h1 {
   font-family: allison;
-  color: white !important;
-  font-size: 8rem;
 }
 
 .parrafo_ {

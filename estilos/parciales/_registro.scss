@@ -43,7 +43,8 @@
 /*=== Propiedades para el boton de registro===*/
 
 .boton_ {
-  background: rgb(146, 143, 143);
+  background: #01252e;
+  color: white !important;
   width: 8rem;
   height: 3rem;
 
@@ -52,9 +53,8 @@
 
   &:hover,
   &:focus {
-    background: #01252e;
-
-    color: white;
+    background: rgb(146, 143, 143);
+    color: black !important;
     -webkit-transition: background-color 1s ease-out;
     transition: background-color 1s ease-out;
   }
