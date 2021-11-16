@@ -565,6 +565,7 @@ hr {
 /*=== Propiedades el titulo del index===*/
 .titulo__h1 {
   font-family: allison;
+  font-size: 8rem;
 }
 
 .parrafo_ {
