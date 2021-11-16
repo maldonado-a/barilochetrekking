@@ -526,6 +526,12 @@ hr {
 }
 
 .excursion:hover .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   opacity: 1;
   -webkit-transform: scale(1);
   transform: scale(1);

@@ -23,6 +23,8 @@
   transition: all 0.5s;
 }
 .excursion:hover .info {
+  display: flex;
+  justify-content: center;
   opacity: 1;
   -webkit-transform: scale(1);
   transform: scale(1);
